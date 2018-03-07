@@ -173,8 +173,11 @@ $if($eq(%compilation%,1),
 
 $noop(########## TAG MANAGE ######################################)
 
-$noop(★ Organize artist by alphabetical folders excluding leading The ★)
+$noop(★ Organize artist by alphabetical folders excluding leading The Der Die Das ★)
 $set(albumartist,$if($eq($left(%albumartist%,4),The ),%albumartistsort%,%albumartist%))
+$set(albumartist,$if($eq($left(%albumartist%,4),Der ),%albumartistsort%,%albumartist%))
+$set(albumartist,$if($eq($left(%albumartist%,4),Die ),%albumartistsort%,%albumartist%))
+$set(albumartist,$if($eq($left(%albumartist%,4),Das ),%albumartistsort%,%albumartist%))
 
 
 $noop(########## TAG CLEANUP  ####################################)
