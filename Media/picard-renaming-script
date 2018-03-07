@@ -320,7 +320,7 @@ $noop(★ \(YEAR\) Album [Media-Type][CDx~subtitle]/ or /CDx~subtitle/ ★)
 
 (
 $if($if2(%date%,%originalyear%,%originaldate%),$left($if2(%date%,%originalyear%,%originaldate%),4),0000)
-)
+) 
 %_albumForFilename%
 
 $if($ne(%media%,CD), $if(%media%,[%media%]))
